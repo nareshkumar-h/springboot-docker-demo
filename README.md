@@ -1,9 +1,8 @@
 # springboot-docker-demo
 
 # Prerequisite 
-* Install Docker
 * Create an account in hub.docker.com
-
+* Install Docker in EC2
 
 #### Install Docker in EC2
 ```
@@ -15,6 +14,9 @@ sudo service docker start
 ```
 docker version
 ```
+
+#### Spring Boot App Docker Image
+* https://cloud.docker.com/u/nareshkumarh/repository/docker/nareshkumarh/docker-demo
 
 #### Pull the Image
 ```
