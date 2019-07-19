@@ -34,6 +34,22 @@ docker images
 docker push nareshkumarh/docker-demo
 ```
 
-#### Start the Application
+#### Start the Application in a container
 ```
+docker run -p 8085:8080 -t nareshkumarh/docker-demo
+```
+
+#### List the running process
+```
+docker ps
+```
+
+####  Stop the Container
+```
+docker stop <<containerid>>
+```
+
+#### Remove the Images
+```
+docker rmi <<imageId>>
 ```
