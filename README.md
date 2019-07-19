@@ -44,6 +44,16 @@ docker ps
 docker stop <<containerid>>
 ```
 
+####  List all the process
+```
+docker ps -a
+```
+
+#### Remove the Container
+```
+docker rm <<containerid>>
+```
+
 #### Remove the Images
 ```
 docker rmi <<imageId>>
