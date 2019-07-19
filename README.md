@@ -1,5 +1,10 @@
 # springboot-docker-demo
 
+# Prerequisite 
+* Install Docker
+* Create an account in hub.docker.com
+
+
 #### Install Docker in EC2
 ```
 sudo yum install docker -y
@@ -11,16 +16,9 @@ sudo service docker start
 docker version
 ```
 
-#### Create Dockerfile for your project
+#### Pull the Image
 ```
-FROM openjdk:8-jdk-alpine
-COPY target/docker-demo-0.0.1-SNAPSHOT.jar .
-ENTRYPOINT ["java","-jar","docker-demo-0.0.1-SNAPSHOT.jar"]
-``` 
-
-#### Build Docker Images
-```
-docker build -t nareshkumarh/docker-demo .
+docker pull nareshkumarh/docker-demo
 ```
 
 #### List All Images
@@ -28,11 +26,6 @@ docker build -t nareshkumarh/docker-demo .
 docker images
 ```
 ![](docker_images.png)
-
-#### Push the Images
-```
-docker push nareshkumarh/docker-demo
-```
 
 #### Start the Application in a container
 ```
