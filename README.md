@@ -51,9 +51,9 @@ docker images
 docker run -p 8085:8080 -t nareshkumarh/docker-demo
 ```
 
-#### List the running process
+#### List of all running containers
 ```
-docker ps
+docker ps -a
 ```
 
 ####  Stop the Container
@@ -61,13 +61,9 @@ docker ps
 docker stop <<containerid>>
 ```
 
-####  List all the process
-```
-docker ps -a
-```
-
 #### Remove the Container
 ```
+docker ps -a
 docker rm <<containerid>>
 ```
 
